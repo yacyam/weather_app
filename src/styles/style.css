@@ -1,0 +1,51 @@
+body{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 6fr 2fr;
+    padding:10px;
+    background-color: antiquewhite;
+}
+label{
+    margin-left:15px;
+}
+input{
+    border:0;
+    background-color: antiquewhite;
+    border-bottom:2px solid black;
+}
+input:focus{
+    outline: none;
+}
+#top{
+    display: flex;
+    border: 1px solid black;
+}
+#top-left{
+    display: flex;
+    flex-direction: column;
+    margin-left:25px;
+    padding:25px;
+}
+#top-right{
+    width:10rem;
+    padding:10px;
+    font-weight:bold;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+}
+#top-right{
+    margin-top:50px;
+}
+#weekly{
+    border: 1px solid black;
+}
+
+#weekly{
+    border:1px solid black;
+    grid-column: 1/-1;
+}
+#hourly{
+    border:1px solid black;
+}
