@@ -83,17 +83,19 @@ async function specificGather(){
 /**
  * Effect: Gathers all data from city passed in as argument and
  * displays all of it on screen. If city isn't recognized by
- * API, then nothing new will be displayed. Default display will
+ * API, then error will be displayed. Default display will
  * be Ithaca.
  */
 async function gatherAll(city='Ithaca'){
+    let text = document.getElementById('errText')
+    text.innerHTML = ``;
     await fetchData(city);
     if(!dataObj.err){
         await specificGather();
         displayAll(dataObj, maxWeekData, minWeekData, hourlyData)
     }
     else{
-        console.log('Please Enter City')
+        text.innerHTML = `Incorrect Format. Please Input Correct City, State, or Country.`
     }
 }
 

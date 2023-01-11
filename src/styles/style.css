@@ -25,6 +25,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     margin-left:25px;
+    margin-right:5px;
     padding:25px;
 }
 #top-right{
