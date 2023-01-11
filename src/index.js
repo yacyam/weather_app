@@ -1,7 +1,7 @@
 import './styles/style.css';
 import gatherAll from './apiGather';
 
-gatherAll();
+//gatherAll();
 
 document.getElementById('form').addEventListener('submit', (val) => {
     val.preventDefault();
