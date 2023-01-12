@@ -8,5 +8,5 @@ document.getElementById('form').addEventListener('submit', (val) => {
     let cityName = document.getElementById('locSub').value
     console.log(cityName);
 
-    //gatherAll(cityName)
+    gatherAll(cityName);
 })

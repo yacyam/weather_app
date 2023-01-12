@@ -42,6 +42,8 @@ input:focus{
 }
 #weekly{
     border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #weekly{
@@ -50,4 +52,13 @@ input:focus{
 }
 #hourly{
     border:1px solid black;
+    display: grid;
+    min-width:20rem;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+#hourly div{
+    border:1px solid black;
+    text-align: center;
+}
+#footer{
 }
