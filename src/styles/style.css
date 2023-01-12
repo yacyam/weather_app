@@ -1,5 +1,5 @@
 .foo{
-    background-image: url('../assets/images/joshua-sortino-XMcoTHgNcQA-unsplash.jpg');
+    background-image: url('../assets/images/ken-cheung-KonWFWUaAuk-unsplash.jpg');
     background-size: cover;
 }
 
@@ -8,19 +8,27 @@ body{
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 6fr 2fr;
     padding:10px;
-    color: white;
+    color: rgb(251, 251, 251);
 }
 label{
     margin-left:15px;
+}
+#nameCity{
+    font-size:50px;
 }
 input{
     border:0;
     text-align: center;
     border-bottom:2px solid white;
     background: transparent;
+    color:white;
 }
 input:focus{
     outline: none;
+    color:white;
+}
+input::placeholder{
+    color:white;
 }
 #top{
     display: flex;
@@ -50,6 +58,7 @@ input:focus{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
 #weekly{

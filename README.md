@@ -1,3 +1,3 @@
 # weather_app
 Simple Weather App
-Image Credit: Bri Schneiter (pexels.com)
+Image Credit: Ken Cheung (pexels.com)
