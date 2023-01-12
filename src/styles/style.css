@@ -1,9 +1,13 @@
+.foo{
+    background-image: url('../assets/images/pexels-bri-schneiter-346529.jpg');
+    background-size: cover;
+}
+
 body{
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 6fr 2fr;
     padding:10px;
-    background-color: antiquewhite;
 }
 label{
     margin-left:15px;
@@ -11,8 +15,8 @@ label{
 input{
     border:0;
     text-align: center;
-    background-color: antiquewhite;
     border-bottom:2px solid black;
+    background: transparent;
 }
 input:focus{
     outline: none;

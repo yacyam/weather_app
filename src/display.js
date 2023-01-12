@@ -109,14 +109,14 @@ function displaySide(hourlyTemps){
     let hour7 = document.getElementById('hour-7');
     let hour8 = document.getElementById('hour-8');
 
-    hour.innerHTML = `10:00`;
+    hour.innerHTML = `10:00 AM`;
     temp.innerHTML = `${Math.round(hourlyTemps.hourly.temperature_2m[10])}`
     hour1.innerHTML = ``;
     hour1.appendChild(temp);
     hour1.appendChild(hour);
 
     hour = document.createElement('h3');
-    hour.innerHTML = `11:00`;
+    hour.innerHTML = `11:00 AM`;
     temp = document.createElement('h2');
     temp.innerHTML = `${Math.round(hourlyTemps.hourly.temperature_2m[11])}`
     hour2.innerHTML = ``;
@@ -124,7 +124,7 @@ function displaySide(hourlyTemps){
     hour2.appendChild(hour);
 
     hour = document.createElement('h3');
-    hour.innerHTML = `12:00`;
+    hour.innerHTML = `12:00 PM`;
     temp = document.createElement('h2');
     temp.innerHTML = `${Math.round(hourlyTemps.hourly.temperature_2m[12])}`
     hour3.innerHTML = ``
@@ -132,7 +132,7 @@ function displaySide(hourlyTemps){
     hour3.appendChild(hour);
 
     hour = document.createElement('h3');
-    hour.innerHTML = `1:00`;
+    hour.innerHTML = `1:00 PM`;
     temp = document.createElement('h2');
     temp.innerHTML = `${Math.round(hourlyTemps.hourly.temperature_2m[13])}`
     hour4.innerHTML = ``
@@ -140,7 +140,7 @@ function displaySide(hourlyTemps){
     hour4.appendChild(hour);
 
     hour = document.createElement('h3');
-    hour.innerHTML = `2:00`;
+    hour.innerHTML = `2:00 PM`;
     temp = document.createElement('h2');
     temp.innerHTML = `${Math.round(hourlyTemps.hourly.temperature_2m[14])}`
     hour5.innerHTML = ``
@@ -148,7 +148,7 @@ function displaySide(hourlyTemps){
     hour5.appendChild(hour);
 
     hour = document.createElement('h3');
-    hour.innerHTML = `3:00`;
+    hour.innerHTML = `3:00 PM`;
     temp = document.createElement('h2');
     temp.innerHTML = `${Math.round(hourlyTemps.hourly.temperature_2m[15])}`
     hour6.innerHTML = ``
@@ -156,7 +156,7 @@ function displaySide(hourlyTemps){
     hour6.appendChild(hour);
 
     hour = document.createElement('h3');
-    hour.innerHTML = `4:00`;
+    hour.innerHTML = `4:00 PM`;
     temp = document.createElement('h2');
     temp.innerHTML = `${Math.round(hourlyTemps.hourly.temperature_2m[16])}`
     hour7.innerHTML = ``
@@ -164,7 +164,7 @@ function displaySide(hourlyTemps){
     hour7.appendChild(hour);
 
     hour = document.createElement('h3');
-    hour.innerHTML = `5:00`;
+    hour.innerHTML = `5:00 PM`;
     temp = document.createElement('h2');
     temp.innerHTML = `${Math.round(hourlyTemps.hourly.temperature_2m[17])}`
     hour8.innerHTML = ``

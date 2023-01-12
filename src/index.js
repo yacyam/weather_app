@@ -1,5 +1,7 @@
 import './styles/style.css';
+import img from './assets/images/pexels-bri-schneiter-346529.jpg'
 import gatherAll from './apiGather';
+
 
 gatherAll();
 

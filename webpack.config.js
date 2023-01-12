@@ -26,8 +26,9 @@ module.exports = {
             test: /\.css$/i,
             use: ["style-loader", "css-loader"],
         },
+        /*
         {
-          test: /\.(gif|png|webp|jpe?g)$/,
+          test: /\.(gif|png|webp|jpe?g)$/i,
           use: [
             {
               loader: 'file-loader',
@@ -37,6 +38,11 @@ module.exports = {
               }
             }
           ]
+        },
+        */
+        {
+          test: /\.(jpg|png|svg|gif)$/,
+          type: 'asset/resource',
         },
     ]
   },
