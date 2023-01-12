@@ -1,5 +1,5 @@
 .foo{
-    background-image: url('../assets/images/pexels-bri-schneiter-346529.jpg');
+    background-image: url('../assets/images/joshua-sortino-XMcoTHgNcQA-unsplash.jpg');
     background-size: cover;
 }
 
@@ -8,6 +8,7 @@ body{
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 6fr 2fr;
     padding:10px;
+    color: white;
 }
 label{
     margin-left:15px;
@@ -15,7 +16,7 @@ label{
 input{
     border:0;
     text-align: center;
-    border-bottom:2px solid black;
+    border-bottom:2px solid white;
     background: transparent;
 }
 input:focus{
@@ -23,7 +24,7 @@ input:focus{
 }
 #top{
     display: flex;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 #top-left{
     display: flex;
@@ -45,24 +46,27 @@ input:focus{
     margin-top:50px;
 }
 #weekly{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #weekly{
-    border:1px solid black;
+    /*border:1px solid black;*/
     grid-column: 1/-1;
 }
 #hourly{
-    border:1px solid black;
+    /*border:1px solid black;*/
     display: grid;
     min-width:20rem;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
 }
 #hourly div{
-    border:1px solid black;
+    /*border:1px solid black;*/
     text-align: center;
 }
-#footer{
+#weekly img{
+    max-width:80px;
+    max-height:80px;
 }

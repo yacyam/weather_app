@@ -40,10 +40,12 @@ module.exports = {
           ]
         },
         */
+      
         {
-          test: /\.(jpg|png|svg|gif)$/,
+          test: /\.(jpg|jpeg|png|svg|gif)$/,
           type: 'asset/resource',
         },
+        
     ]
   },
   plugins: [
