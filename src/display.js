@@ -23,16 +23,33 @@ function displayMain(todayWeather){
  * Effect: Displays maximum and minimum temperatures
  * for the entire week on the footer of the screen
  */
-function displayFooter(maxTemps, minTemps, todayWeather){
-    console.log(maxTemps)
-    console.log(minTemps)
+function displayFooter(maxTemps, minTemps){
+    //Create all base elements for footer
     let max = document.createElement('h3');
     let min = document.createElement('h3');
     let image1 = document.createElement('img');
     let image2 = document.createElement('img');
+    let todayDate = document.createElement('h4');
     image1.src = hot;
     image2.src = cold;
 
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+
+    let date1 = parseInt(dd);
+    let date2 = parseInt(dd) + 1;
+    let date3 = parseInt(dd) + 2;
+    let date4 = parseInt(dd) + 3;
+    let date5 = parseInt(dd) + 4;
+    let date6 = parseInt(dd) + 5;
+    let date7 = parseInt(dd) + 6;
+
+    today = mm + '/' + date1.toString() + '/' + yyyy;
+    todayDate.innerText = today;
+
+    //Get all divs to place info into
     let day1 = document.getElementById('day-1');
     let day2 = document.getElementById('day-2');
     let day3 = document.getElementById('day-3');
@@ -54,6 +71,8 @@ function displayFooter(maxTemps, minTemps, todayWeather){
         day1.appendChild(max);
         day1.appendChild(min);
     }
+    day1.appendChild(todayDate);
+
 
     image1 = document.createElement('img');
     image2 = document.createElement('img');
@@ -61,6 +80,11 @@ function displayFooter(maxTemps, minTemps, todayWeather){
     image2.src = cold;
     max = document.createElement('h3');
     min = document.createElement('h3');
+    //Creates today's date
+    todayDate = document.createElement('h4');
+    today = mm + '/' + date2.toString() + '/' + yyyy;
+    todayDate.innerText = today;
+
     max.innerHTML = `High: ${Math.round(maxTemps.daily.temperature_2m_max[1])}° F`
     min.innerHTML = `Low: ${Math.round(minTemps.daily.temperature_2m_min[1])}° F`
     day2.innerHTML = ``
@@ -74,11 +98,17 @@ function displayFooter(maxTemps, minTemps, todayWeather){
         day2.appendChild(max);
         day2.appendChild(min);
     }
+    day2.appendChild(todayDate);
 
     image1 = document.createElement('img');
     image2 = document.createElement('img');
     image1.src = hot;
     image2.src = cold;
+    //Creates today's date
+    todayDate = document.createElement('h4');
+    today = mm + '/' + date3.toString() + '/' + yyyy;
+    todayDate.innerText = today;
+
     max = document.createElement('h3');
     min = document.createElement('h3');
     max.innerHTML = `High: ${Math.round(maxTemps.daily.temperature_2m_max[2])}° F`
@@ -94,11 +124,17 @@ function displayFooter(maxTemps, minTemps, todayWeather){
         day3.appendChild(max);
         day3.appendChild(min);
     }
+    day3.appendChild(todayDate);
 
     image1 = document.createElement('img');
     image2 = document.createElement('img');
     image1.src = hot;
     image2.src = cold;
+    //Creates today's date
+    todayDate = document.createElement('h4');
+    today = mm + '/' + date4.toString() + '/' + yyyy;
+    todayDate.innerText = today;
+
     max = document.createElement('h3');
     min = document.createElement('h3');
     max.innerHTML = `High: ${Math.round(maxTemps.daily.temperature_2m_max[3])}° F`
@@ -114,6 +150,7 @@ function displayFooter(maxTemps, minTemps, todayWeather){
         day4.appendChild(max);
         day4.appendChild(min);
     }
+    day4.appendChild(todayDate);
 
     image1 = document.createElement('img');
     image2 = document.createElement('img');
@@ -121,6 +158,11 @@ function displayFooter(maxTemps, minTemps, todayWeather){
     image2.src = cold;
     max = document.createElement('h3');
     min = document.createElement('h3');
+    //Creates today's date
+    todayDate = document.createElement('h4');
+    today = mm + '/' + date5.toString() + '/' + yyyy;
+    todayDate.innerText = today;
+
     max.innerHTML = `High: ${Math.round(maxTemps.daily.temperature_2m_max[4])}° F`
     min.innerHTML = `Low: ${Math.round(minTemps.daily.temperature_2m_min[4])}° F`
     day5.innerHTML = ``
@@ -134,6 +176,7 @@ function displayFooter(maxTemps, minTemps, todayWeather){
         day5.appendChild(max);
         day5.appendChild(min);
     }
+    day5.appendChild(todayDate);
 
     image1 = document.createElement('img');
     image2 = document.createElement('img');
@@ -141,6 +184,11 @@ function displayFooter(maxTemps, minTemps, todayWeather){
     image2.src = cold;
     max = document.createElement('h3');
     min = document.createElement('h3');
+    //Creates today's date
+    todayDate = document.createElement('h4');
+    today = mm + '/' + date6.toString() + '/' + yyyy;
+    todayDate.innerText = today;
+
     max.innerHTML = `High: ${Math.round(maxTemps.daily.temperature_2m_max[5])}° F`
     min.innerHTML = `Low: ${Math.round(minTemps.daily.temperature_2m_min[5])}° F`
     day6.innerHTML = ``
@@ -154,6 +202,7 @@ function displayFooter(maxTemps, minTemps, todayWeather){
         day6.appendChild(max);
         day6.appendChild(min);
     }
+    day6.appendChild(todayDate);
 
     image1 = document.createElement('img');
     image2 = document.createElement('img');
@@ -161,6 +210,11 @@ function displayFooter(maxTemps, minTemps, todayWeather){
     image2.src = cold;
     max = document.createElement('h3');
     min = document.createElement('h3');
+    //Creates today's date
+    todayDate = document.createElement('h4');
+    today = mm + '/' + date7.toString() + '/' + yyyy;
+    todayDate.innerText = today;
+
     max.innerHTML = `High: ${Math.round(maxTemps.daily.temperature_2m_max[6])}° F`
     min.innerHTML = `Low: ${Math.round(minTemps.daily.temperature_2m_min[6])}° F`
     day7.innerHTML = ``
@@ -174,6 +228,7 @@ function displayFooter(maxTemps, minTemps, todayWeather){
         day7.appendChild(max);
         day7.appendChild(min);
     }
+    day7.appendChild(todayDate);
 }
 
 /**
@@ -264,7 +319,7 @@ function displaySide(hourlyTemps){
  */
 function displayAll(today, max, min, hour){
     displayMain(today)
-    displayFooter(max, min, today)
+    displayFooter(max, min)
     displaySide(hour)
 }
 
