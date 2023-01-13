@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <script defer src="main.js"></script></head>
-<body>
+<body class="foo">
     <div id="top">
         <main id="top-left">
-            <h1 id="nameCity">London, UK</h1>
+            <h1 id="nameCity"></h1>
             <div id="info">
-                <h2 id="tempCity">Temperature: 20° F</h2>
-                <h2 id="rainCity">Chance For Rain/Snow: High</h2>
-                <h2 id="skyCity">Skies: Partly Cloudy</h2>
-                <h2 id="windCity">Wind Speeds: 5 MPH</h2>
+                <h2 id="tempCity"></h2>
+                <h3 id="feelCity"></h3>
+                <h2 id="rainCity"></h2>
+                <h2 id="windCity"></h2>
             </div>
         </main>
         <section id="top-right">
@@ -21,34 +21,45 @@
             <form action="" id="form">
                 <label for="city">Submit Location</label>
                 <input type="text" name="city" id="locSub">
+                <div id="errText">
+
+                </div>
             </form>
         </section>
     </div>
 
     <section id="hourly">
-        <div id="hour-1">
+        <h2 id="hrTemps">Hourly Temps</h2>
+        <div id="top-buttons">
+            <button id="button-hr1">1</button>
+            <button id="button-hr2">2</button>
+            <button id="button-hr3">3</button>
+        </div>
+        <div id="hours">
+            <div id="hour-1">
 
-        </div>
-        <div id="hour-2">
-
-        </div>
-        <div id="hour-3">
-
-        </div>
-        <div id="hour-4">
-
-        </div>
-        <div id="hour-5">
-
-        </div>
-        <div id="hour-6">
-
-        </div>
-        <div id="hour-7">
-            
-        </div>
-        <div id="hour-8">
-            
+            </div>
+            <div id="hour-2">
+    
+            </div>
+            <div id="hour-3">
+    
+            </div>
+            <div id="hour-4">
+    
+            </div>
+            <div id="hour-5">
+    
+            </div>
+            <div id="hour-6">
+    
+            </div>
+            <div id="hour-7">
+                
+            </div>
+            <div id="hour-8">
+                
+            </div>
         </div>
     </section>
 
