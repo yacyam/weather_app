@@ -9,7 +9,6 @@ let hrs = {hr1: false, hr2: false, hr3: false};
  * screen.
  */
 function displayMain(todayWeather){
-    console.log(todayWeather)
     let name = document.getElementById('nameCity');
     let temp = document.getElementById('tempCity');
     let feel = document.getElementById('feelCity');
@@ -239,7 +238,6 @@ function displayFooter(maxTemps, minTemps){
  * on the screen through hourlyTemps object data
  */
 function displaySide(hourlyTemps, hourType=8){
-    console.log(hourlyTemps)
     let hr1 = hourlyTemps.hourly.time[hourType];
     let cutHR1 = hr1.slice(hr1.indexOf('T') + 1);
     let actualHR1 = parseInt(cutHR1.slice(0, cutHR1.indexOf(':')));
@@ -442,6 +440,9 @@ function changeSide(num){
             hrs.hr2 = false;
             hrs.hr3 = false;
             displaySide(hourlyData, 8);
+            document.getElementById('button-hr1').classList = 'active'
+            document.getElementById('button-hr2').classList = ''
+            document.getElementById('button-hr3').classList = ''
         }
     }
     else if(num === 2){
@@ -450,6 +451,9 @@ function changeSide(num){
             hrs.hr1 = false;
             hrs.hr3 = false;
             displaySide(hourlyData, 16);
+            document.getElementById('button-hr1').classList = ''
+            document.getElementById('button-hr2').classList = 'active'
+            document.getElementById('button-hr3').classList = ''
         }
     }
     else{
@@ -458,6 +462,9 @@ function changeSide(num){
             hrs.hr1 = false;
             hrs.hr2 = false;
             displaySide(hourlyData, 24);
+            document.getElementById('button-hr1').classList = ''
+            document.getElementById('button-hr2').classList = ''
+            document.getElementById('button-hr3').classList = 'active'
         }
     }
 }

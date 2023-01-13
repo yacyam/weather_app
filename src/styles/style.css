@@ -80,6 +80,10 @@ input::placeholder{
     visibility: hidden;
 }
 
+.active{
+    background-color: rgb(122, 78, 233);
+}
+
 #top-buttons{
     visibility: hidden;
     display: flex;

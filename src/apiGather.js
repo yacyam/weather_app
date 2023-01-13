@@ -96,6 +96,10 @@ async function gatherAll(city='Ithaca'){
         document.getElementById('form').style.visibility = 'visible';
         document.getElementById('top-buttons').style.visibility = 'visible';
         document.getElementById('hrTemps').style.visibility = 'visible';
+
+        document.getElementById('button-hr1').classList = 'active'
+        document.getElementById('button-hr2').classList = ''
+        document.getElementById('button-hr3').classList = ''
     }
     else{
         text.innerHTML = `Incorrect Format. Please Input Correct City, State, or Country.`
