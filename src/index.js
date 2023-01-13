@@ -5,6 +5,8 @@ import { changeSide } from './display';
 
 
 gatherAll();
+const elem = document.documentElement;
+if (elem.requestFullscreen) {elem.requestFullscreen()}
 
 document.getElementById('form').addEventListener('submit', (val) => {
     val.preventDefault();

@@ -1,7 +1,7 @@
+
 .foo{
-    overflow: hidden;
     background-size: cover;
-    background-position: center;
+    
     background-image: url('../assets/images/ken-cheung-KonWFWUaAuk-unsplash.jpg');
 }
 
@@ -122,4 +122,17 @@ button:active{
 #weekly img{
     max-width:80px;
     max-height:80px;
+}
+
+@media only screen and (max-width: 850px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    #weekly{
+        display: flex;
+        flex-direction: column;
+    }
 }
