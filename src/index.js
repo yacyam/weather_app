@@ -1,6 +1,7 @@
 import './styles/style.css';
-import img from './assets/images/pexels-bri-schneiter-346529.jpg'
-import gatherAll from './apiGather';
+import { gatherAll } from './apiGather';
+import { changeSide } from './display';
+
 
 
 gatherAll();
@@ -11,4 +12,16 @@ document.getElementById('form').addEventListener('submit', (val) => {
     console.log(cityName);
 
     gatherAll(cityName);
+})
+
+document.getElementById('button-hr1').addEventListener('click', () => {
+    changeSide(1);
+})
+
+document.getElementById('button-hr2').addEventListener('click', () => {
+    changeSide(2);
+})
+
+document.getElementById('button-hr3').addEventListener('click', () => {
+    changeSide(3);
 })

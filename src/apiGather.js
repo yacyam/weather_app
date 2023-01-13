@@ -1,4 +1,4 @@
-import displayAll from "./display";
+import { displayAll } from "./display";
 let dataObj = { err: false };
 let maxWeekData = {};
 let minWeekData = {};
@@ -92,11 +92,14 @@ async function gatherAll(city='Ithaca'){
     await fetchData(city);
     if(!dataObj.err){
         await specificGather();
-        displayAll(dataObj, maxWeekData, minWeekData, hourlyData)
+        displayAll(dataObj, maxWeekData, minWeekData, hourlyData);
+        document.getElementById('form').style.visibility = 'visible';
+        document.getElementById('top-buttons').style.visibility = 'visible';
+        document.getElementById('hrTemps').style.visibility = 'visible';
     }
     else{
         text.innerHTML = `Incorrect Format. Please Input Correct City, State, or Country.`
     }
 }
 
-export default gatherAll
+export { gatherAll, hourlyData }
