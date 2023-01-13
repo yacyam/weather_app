@@ -67,6 +67,38 @@ input::placeholder{
     /*border:1px solid black;*/
     grid-column: 1/-1;
 }
+#hourly{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#hourly h2{
+    margin-bottom:40px;
+}
+
+#top-buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+button{
+    width:2rem;
+    font-size: 20px;
+    margin:5px;
+    border: 0.5px solid black;
+    color: white;
+    background-color: rgb(165, 137, 237);
+}
+button:hover{
+    background-color: rgb(122, 78, 233);
+}
+button:active{
+    background-color: rgb(90, 30, 242);
+
+}
+
 #hours{
     /*border:1px solid black;*/
     display: grid;
@@ -75,7 +107,6 @@ input::placeholder{
 }
 #hours div{
     /*border:1px solid black;*/
-    text-align: center;
 }
 #weekly img{
     max-width:80px;
