@@ -26,21 +26,6 @@ module.exports = {
             test: /\.css$/i,
             use: ["style-loader", "css-loader"],
         },
-        /*
-        {
-          test: /\.(gif|png|webp|jpe?g)$/i,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[name].[ext]',
-                outputPath: 'assets/images/'
-              }
-            }
-          ]
-        },
-        */
-      
         {
           test: /\.(jpg|jpeg|png|svg|gif)$/,
           type: 'asset/resource',

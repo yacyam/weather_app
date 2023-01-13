@@ -19,10 +19,8 @@ async function fetchData(city){
             throw new Error();
         }
         dataObj = data;
-        //console.log(dataObj)
     })
     .catch((err) => {
-        console.log('Failed to fetch from API')
         dataObj.err = true;
     })
 }
@@ -42,7 +40,6 @@ async function specificGather(){
             throw new Error("Failed to fetch from API");
         }
         maxWeekData = data;
-        //console.log(maxWeekData)
     })
     .catch((err) => {
         console.log(err)
@@ -57,7 +54,6 @@ async function specificGather(){
             throw new Error("Failed to fetch from API");
         }
         minWeekData = data;
-        //console.log(minWeekData)
     })
     .catch((err) => {
         console.log(err)
@@ -72,7 +68,6 @@ async function specificGather(){
             throw new Error("Failed to fetch from API");
         }
         hourlyData = data;
-        //console.log(hourlyData)
     })
     .catch((err) => {
         console.log(err)
