@@ -1,6 +1,8 @@
 .foo{
-    background-image: url('../assets/images/ken-cheung-KonWFWUaAuk-unsplash.jpg');
+    overflow: hidden;
     background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/ken-cheung-KonWFWUaAuk-unsplash.jpg');
 }
 
 body{
